@@ -53,6 +53,8 @@ section {
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    font-weight: 600;
+    font-size: 14px;
 }
 .btn > * {
     vertical-align: middle;
@@ -66,10 +68,23 @@ section {
     color: var(--white);
     padding: 10px 16px;
     border-radius: 6px;
-    font-size: 15px;
 }
 .btn-blue:hover {
     background-color: var(--blue-700);
+}
+.btn-outline-blue {
+    background-color: var(--white);
+    color: var(--blue-600);
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--blue-600);
+}
+.btn-outline-blue:hover {
+    background-color: var(--blue-600);
+    color: var(--white);
+}
+.overflow-hidden {
+    overflow: hidden;
 }
 /* end: Global */
 
@@ -96,6 +111,7 @@ nav {
     display: flex;
     align-items: center;
     list-style-type: none;
+    margin-left: auto;
 }
 .navbar-menu > li {
     margin-right: 4px;
@@ -145,7 +161,28 @@ nav {
     color: var(--blue-600);
 }
 .navbar-right {
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.navbar-right > * {
+    margin-left: 32px;
+}
+.navbar-right > :not(.btn) {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    opacity: .8;
+    transition: opacity .3s;
+}
+.navbar-right > :not(.btn):hover {
+    opacity: 1;
+}
+.navbar-right > :not(.btn) i {
+    font-size: 18px;
+    margin-right: 8px;
 }
 .navbar-toggle {
     display: none;
@@ -218,30 +255,6 @@ header {
     color: var(--blue-600);
 }
 /* end: Hero */
-
-
-
-/* start: Features */
-.features-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 32px;
-    row-gap: 48px;
-}
-.features-item-title {
-    font-size: 28px;
-    font-weight: 800;
-    margin-bottom: 4px;
-}
-.features-wrapper > * {
-    padding-left: 16px;
-    border-left: 2px solid var(--orange-600);
-}
-.features-item-text {
-    font-size: 18px;
-    color: var(--gray-600);
-}
-/* end: Features */
 
 
 
@@ -328,7 +341,6 @@ header {
 }
 .job-item-top {
     display: flex;
-    align-items: center;
     margin-bottom: 24px;
 }
 .job-item-top img {
@@ -352,13 +364,16 @@ header {
     display: flex;
     align-items: center;
     color: var(--blue-600);
+    margin-bottom: 16px;
 }
 .job-item-location i {
     margin-right: 8px;
 }
+.job-item-description {
+    color: var(--gray-600);
+}
 .job-item-favourite {
     margin-left: auto;
-    align-self: flex-start;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -369,6 +384,7 @@ header {
     font-size: 18px;
     text-decoration: none;
     color: var(--blue-600);
+    flex-shrink: 0;
 }
 .job-item-bottom {
     display: flex;
@@ -500,6 +516,10 @@ footer {
     .job-wrapper {
         grid-template-columns: 1fr .5fr;
     }
+
+    .navbar-right {
+        display: none;
+    }
 }
 @media screen and (max-width: 991px) {
     .container {
@@ -508,9 +528,6 @@ footer {
 
     .navbar-logo {
         margin-right: auto;
-    }
-    .navbar-right {
-        display: none;
     }
 
     .category-wrapper {
@@ -603,10 +620,6 @@ footer {
     }
     .header-form-group select {
         background-position: top 15px right 12px, bottom 15px right 12px;
-    }
-
-    .features-wrapper {
-        grid-template-columns: 1fr;
     }
 
     .category-wrapper {
