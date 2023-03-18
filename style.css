@@ -45,6 +45,12 @@ section {
 .section-description {
     color: var(--gray-600);
 }
+[data-tab] {
+    display: none;
+}
+[data-tab].active {
+    display: block;
+}
 .btn {
     outline: none;
     text-decoration: none;
@@ -261,6 +267,27 @@ header {
 
 
 /* start: Categories */
+.category-tab {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--gray-400);
+}
+.category-tab > a {
+    text-decoration: none;
+    color: var(--gray-600);
+    font-weight: 600;
+    padding: 16px;
+    transition: color .3s;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+.category-tab > a:hover {
+    color: var(--black);
+}
+.category-tab > a.active {
+    color: var(--blue-600);
+    border-color: var(--blue-600);
+}
 .category-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -272,31 +299,43 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
     border-radius: 8px;
     overflow: hidden;
-    padding: 32px 24px;
-    text-align: center;
     background-color: var(--white);
     border: 1px solid var(--gray-300);
+    position: relative;
 }
-.category-item-icon {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    margin: 0 auto 24px;
-    transition: box-shadow .5s;
-    color: var(--blue-600);
-    box-shadow: 0 0 0 0 var(--blue-600);
+.category-wrapper > * img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform .3s;
+    position: relative;
+    z-index: 0;
 }
-.category-wrapper > :hover .category-item-icon {
-    box-shadow: 0 0 0 200px var(--blue-600);
+.category-wrapper > :hover img {
+    transform: scale(1.1);
+}
+.category-wrapper > ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+.category-item-detail {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
 }
 .category-item-title {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
     font-size: 18px;
     font-weight: 600;
     display: inline-block;
@@ -307,12 +346,9 @@ header {
     text-decoration: underline;
 }
 .category-item-text {
-    color: var(--gray-600);
-    transition: color .5s;
-}
-.category-wrapper > :hover .category-item-title,
-.category-wrapper > :hover .category-item-text {
     color: var(--white);
+    transition: color .5s;
+    opacity: .8;
 }
 /* end: Categories */
 
