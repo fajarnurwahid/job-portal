@@ -218,6 +218,8 @@ header {
     border-radius: 8px;
     display: flex;
     align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
 }
 .header-form-group {
     width: 100%;
@@ -320,13 +322,15 @@ header {
 .trending-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 32px;
+    max-width: 940px;
+    margin: 32px auto 0;
 }
 .trending-wrapper > * {
     margin-right: 8px;
     margin-bottom: 8px;
-    padding: 8px 16px;
+    padding: 12px 16px;
     border: 1px solid var(--blue-600);
     font-size: 14px;
     font-weight: 600;
