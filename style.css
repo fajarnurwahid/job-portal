@@ -316,6 +316,32 @@ header {
 
 
 
+/* start: Trending */
+.trending-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+.trending-wrapper > * {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    border: 1px solid var(--blue-600);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--blue-600);
+    border-radius: 6px;
+    transition: all .3s;
+}
+.trending-wrapper > :hover {
+    background-color: var(--blue-100);
+}
+/* end: Trending */
+
+
+
 /* start: Jobs */
 .job-wrapper {
     display: grid;
