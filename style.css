@@ -602,7 +602,7 @@ footer {
         width: 100%;
     }
     .header-form-group select {
-        background-position: top 14px right 12px, bottom 14px right 12px;
+        background-position: top 15px right 12px, bottom 15px right 12px;
     }
 
     .features-wrapper {
