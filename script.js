@@ -9,4 +9,5 @@ $('[data-toggle="navbar-submenu"]').click(function(e) {
 $('.navbar-toggle').click(function(e) {
     e.preventDefault()
     $('.navbar-menu').toggleClass('active')
+    $('html').toggleClass('overflow-hidden')
 })
