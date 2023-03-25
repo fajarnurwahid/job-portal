@@ -1,0 +1,140 @@
+/* start: Detail */
+.detail-section {
+    padding: 32px 0;
+}
+.detail-image-lg {
+    width: calc(100% + 32px);
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-left: -16px;
+    display: block;
+}
+.detail-image-sm {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -40px;
+    border: 4px solid var(--white);
+    background-color: var(--white);
+}
+.detail-header {
+    margin-top: 16px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--gray-300);
+}
+.detail-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.detail-company {
+    font-weight: 500;
+}
+.detail-time {
+    color: var(--gray-600);
+    margin-top: 16px;
+    font-size: 14px;
+}
+.detail-about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 32px;
+}
+.detail-about-box {
+    margin-bottom: 32px;
+}
+.detail-about-box-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.detail-about-box p {
+    line-height: 1.5;
+}
+.detail-info-box {
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+}
+.detail-info-location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+.detail-info-location i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+.detail-info-salary-box {
+    margin-bottom: 32px;
+}
+.detail-info-salary-lg {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.detail-info-salary-sm {
+    color: var(--gray-600);
+}
+.detail-info-list {
+    list-style-type: none;
+    margin-bottom: 32px;
+}
+.detail-info-list > li {
+    display: flex;
+    margin-bottom: 16px;
+}
+.detail-info-list-icon {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-200);
+    font-size: 18px;
+    border-radius: 50%;
+}
+.detail-info-list-title {
+    font-weight: 700;
+}
+.detail-info-list-subtitle {
+    font-size: 14px;
+    color: var(--gray-600);
+}
+.detail-info-buttons > * {
+    display: block;
+}
+.detail-info-buttons > :not(:last-child) {
+    margin-bottom: 8px;
+}
+/* end: Detail */
+
+
+
+
+
+
+
+/* start: Breakpoints */
+@media screen and (max-width: 991px) {
+    .detail-about-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .detail-about-wrapper > :first-child {
+        order: 2;
+    }
+    .detail-about-wrapper > :last-child {
+        order: 1;
+    }
+}
+@media screen and (max-width: 767px) {
+    .detail-image-lg {
+        border-radius: 0;
+    }
+}
+/* end: Breakpoints */
