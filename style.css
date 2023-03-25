@@ -926,8 +926,43 @@ footer {
     }
 }
 @media screen and (max-width: 575px) {
+    .trending-wrapper {
+        display: grid;
+        justify-content: unset;
+        grid-auto-flow: column;
+        grid-auto-columns: auto;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+    }
+    .trending-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .trending-wrapper > * {
+        white-space: nowrap;
+        scroll-snap-align: start;
+    }
+
     .category-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: unset;
+        grid-auto-flow: column;
+        grid-auto-columns: 280px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+        gap: 24px;
+    }
+    .category-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .category-wrapper > * {
+        scroll-snap-align: start;
+    }
+
+    .partner-images {
+        grid-template-columns: 1fr 1fr;
     }
 
     .job-wrapper {
@@ -966,27 +1001,6 @@ footer {
     }
     .job-item-status {
         margin-bottom: 16px;
-    }
-
-    .category-wrapper {
-        grid-template-columns: unset;
-        grid-auto-flow: column;
-        grid-auto-columns: 280px;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        scroll-snap-type: x mandatory;
-        gap: 24px;
-    }
-    .category-wrapper::-webkit-scrollbar {
-        display: none;
-    }
-    .category-wrapper > * {
-        scroll-snap-align: start;
-    }
-
-    .partner-images {
-        grid-template-columns: 1fr 1fr;
     }
 
     .for-you-career-wrapper {
