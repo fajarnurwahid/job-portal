@@ -79,7 +79,7 @@ section {
     background-color: var(--blue-700);
 }
 .btn-outline-blue {
-    background-color: var(--white);
+    background-color: transparent;
     color: var(--blue-600);
     padding: 10px 16px;
     border-radius: 6px;
@@ -507,6 +507,217 @@ header {
 
 
 
+/* start: Popular Courses */
+.course-container {
+    margin-top: 32px;
+    position: relative;
+    margin-bottom: 16px;
+}
+.course-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    border: 1px solid var(--gray-400);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--black);
+    transition: background-color .2s;
+    z-index: 1;
+}
+.course-arrow:hover {
+    background-color: var(--gray-200);
+}
+.course-arrow.prev {
+    left: 0;
+}
+.course-arrow.next {
+    right: 0;
+}
+.course-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 280px;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 16px 0;
+}
+.course-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.course-wrapper > * {
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+.course-item-title {
+    text-decoration: none;
+    color: var(--blue-600);
+    font-weight: 600;
+}
+.course-item-title:hover {
+    color: var(--blue-700);
+}
+.course-item-user {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+.course-item-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.course-item-info {
+    list-style-type: none;
+    border-left: 1px solid var(--orange-600);
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+.course-item-info > li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 4px 0;
+    color: var(--gray-600);
+}
+.course-item-info > li i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+.course-item-read-more {
+    text-decoration: none;
+    color: var(--blue-600);
+    font-weight: 500;
+    font-size: 14px;
+}
+.course-item-read-more:hover {
+    text-decoration: underline;
+}
+/* end: Popular Courses */
+
+
+
+/* start: Partner */
+.partner-section {
+    background-color: var(--blue-100);
+}
+.partner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 48px;
+    column-gap: 64px;
+}
+.partner-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.partner-images img {
+    width: 100%;
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px -4px rgba(0, 0, 0, .1);
+    background-color: var(--white);
+}
+/* end: Partner */
+
+
+
+/* start: For You */
+.for-you-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 64px;
+    row-gap: 48px;
+    margin-top: 48px;
+}
+.for-you-wrapper .section-description {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+.for-you-wrapper .section-title {
+    font-size: 24px;
+}
+.for-you-course-wrapper {
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.for-you-course-wrapper img {
+    width: 80%;
+    border-radius: 8px;
+    height: 300px;
+    object-fit: cover;
+}
+.for-you-course-box {
+    width: 280px;
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    border: 1px solid var(--gray-300);
+}
+.for-you-career-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.for-you-career-wrapper > * {
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+}
+.for-you-career-wrapper img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.for-you-career-item-text {
+    height: 130px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.for-you-career-item-title {
+    font-weight: 700;
+}
+.for-you-career-item-learn-more {
+    text-decoration: none;
+    color: var(--blue-600);
+    font-size: 14px;
+    font-weight: 500;
+}
+.for-you-career-item-learn-more > * {
+    vertical-align: middle;
+}
+.for-you-career-item-learn-more:hover {
+    text-decoration: underline;
+}
+/* end: For You */
+
+
+
 /* start: Footer */
 footer {
     background-color: #222845;
@@ -601,6 +812,14 @@ footer {
     }
 
     .job-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .for-you-wrapper {
         grid-template-columns: 1fr;
     }
 }
@@ -724,6 +943,14 @@ footer {
     }
     .job-item-status {
         margin-bottom: 16px;
+    }
+
+    .partner-images {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .for-you-career-wrapper {
+        grid-template-columns: 1fr;
     }
 }
 /* end: Breakpoints */

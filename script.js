@@ -19,3 +19,15 @@ $('[data-toggle="tab"]').click(function(e) {
     $(this).addClass('active')
     $('[data-tab="'+$(this).attr('data-target')+'"]').addClass('active')
 })
+
+$('[data-arrow="prev"]').click(function(e) {
+    e.preventDefault()
+    var width = $($(this).attr('data-slider')).children().eq(0).width()
+    $($(this).attr('data-slider')).scrollLeft($($(this).attr('data-slider')).scrollLeft() - width)
+})
+
+$('[data-arrow="next"]').click(function(e) {
+    e.preventDefault()
+    var width = $($(this).attr('data-slider')).children().eq(0).width()
+    $($(this).attr('data-slider')).scrollLeft($($(this).attr('data-slider')).scrollLeft() + width)
+})
