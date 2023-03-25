@@ -241,24 +241,12 @@ header {
     padding-left: 16px;
     border-left: 1px solid var(--gray-400);
 }
-.header-form-group select,
 .header-form-group input {
     width: 100%;
     border: none;
     outline: none;
     padding: 8px 12px;
 }
-.header-form-group select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTEyIDhsNiA2SDZ6Ii8+PC9zdmc+), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTEyIDE2bC02LTZoMTJ6Ii8+PC9zdmc+);
-    background-size: 16px 16px, 16px 16px;
-    background-repeat: no-repeat;
-    background-position: top 8px right 12px, bottom 8px right 12px;
-    padding-right: 32px;
-}
-.header-form-group select:focus ~ i,
 .header-form-group input:focus ~ i {
     color: var(--blue-600);
 }
