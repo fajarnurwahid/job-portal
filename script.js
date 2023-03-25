@@ -8,8 +8,20 @@ $('[data-toggle="navbar-submenu"]').click(function(e) {
 
 $('.navbar-toggle').click(function(e) {
     e.preventDefault()
+    var el = $(this)
     $('.navbar-menu').toggleClass('active')
+    el.toggleClass('active')
     $('html').toggleClass('overflow-hidden')
+
+    if(el.hasClass('active')) {
+        setTimeout(function() {
+            el.html('<i class="ri-close-line"></i>')
+        }, 250)
+    } else {
+        setTimeout(function() {
+            el.html('<i class="ri-menu-line"></i>')
+        }, 250)
+    }
 })
 
 $('[data-toggle="tab"]').click(function(e) {
