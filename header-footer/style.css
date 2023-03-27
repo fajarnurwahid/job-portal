@@ -107,6 +107,7 @@ section {
     outline: none;
     transition: all .2s;
     background-color: var(--white);
+    width: 100%;
 }
 select.form-control {
     appearance: none;

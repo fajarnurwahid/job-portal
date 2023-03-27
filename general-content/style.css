@@ -1,0 +1,35 @@
+/* start: Hero */
+.hero-section {
+    background-color: var(--gray-200);
+}
+.hero-section .section-title {
+    text-align: center;
+}
+/* end: Hero */
+
+
+
+/* start: Content */
+pre[class*=language-] {
+    margin: 0;
+}
+.content-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.content-box {
+    margin-bottom: 56px;
+}
+.content-element-box {
+    padding: 16px;
+    border: 1px solid var(--gray-400);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+.content-code-box {
+    border: 1px solid var(--gray-400);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+/* end: Content */
