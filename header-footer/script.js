@@ -35,3 +35,12 @@ $('[data-arrow="next"]').click(function(e) {
     var width = $($(this).attr('data-slider')).children().eq(0).width()
     $($(this).attr('data-slider')).scrollLeft($($(this).attr('data-slider')).scrollLeft() + width)
 })
+
+// start: Form
+$('.form-upload-image > input').change(function(e) {
+    var file = e.target.files[0]
+    if(file) {
+        $(this).parent().append('<img src="'+URL.createObjectURL(file)+'">')
+    }
+})
+// end: Form
