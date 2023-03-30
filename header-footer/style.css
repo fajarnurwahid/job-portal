@@ -137,11 +137,10 @@ nav {
     align-items: center;
 }
 .navbar-logo {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--black);
     margin-right: 32px;
+}
+.navbar-logo img {
+    height: 32px;
 }
 .navbar-menu {
     display: flex;
@@ -242,12 +241,11 @@ footer {
     row-gap: 48px;
 }
 .footer-logo {
-    font-size: 22px;
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 800;
     display: inline-block;
     margin-bottom: 12px;
+}
+.footer-logo img {
+    height: 32px;
 }
 .footer-description {
     color: var(--white);
