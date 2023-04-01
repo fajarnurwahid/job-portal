@@ -2,6 +2,14 @@
 .section-title {
     font-size: 20px;
 }
+.alert-panel {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+    margin-bottom: 24px;
+}
 /* end: Globals */
 
 
