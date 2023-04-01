@@ -27,10 +27,6 @@
     margin-bottom: 16px;
     width: 100%;
 }
-.login-form label {
-    margin-bottom: 4px;
-    display: inline-block;
-}
 .login-form .form-control {
     width: 100%;
 }
