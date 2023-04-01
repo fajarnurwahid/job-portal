@@ -62,6 +62,7 @@
 .blog-link {
     text-decoration: none;
     font-weight: 800;
+    font-size: 17px;
     color: var(--black);
 }
 .blog-link:hover {
