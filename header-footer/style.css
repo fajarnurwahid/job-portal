@@ -16,10 +16,13 @@
     --gray-500: #bbb;
     --gray-600: #888;
     --blue-100: #f8f9ff;
+    --blue-200: #eff1ff;
     --blue-600: #2e55fa;
     --blue-700: #1e3cc5;
     --orange-100: #fff4f0;
+    --orange-200: #ffece6;
     --orange-600: #fd6123;
+    --green-200: #e4fff3;
     --green-600: #00be65;
     --red-600: #ff6464;
 }
