@@ -112,6 +112,12 @@
 .detail-info-buttons > :not(:last-child) {
     margin-bottom: 8px;
 }
+.form-apply-now > :not(:last-child) {
+    margin-bottom: 16px;
+}
+.form-apply-now > button {
+    width: 100%;
+}
 /* end: Detail */
 
 

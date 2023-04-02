@@ -107,7 +107,7 @@
                             </li>
                         </ul>
                         <div class="detail-info-buttons">
-                            <a href="#" class="btn btn-blue">Apply for a job</a>
+                            <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#apply-now">Apply for a job</a>
                             <a href="#" class="btn btn-white">Save for later</a>
                         </div>
                     </div>
@@ -116,6 +116,46 @@
         </div>
     </section>
     <!-- end: Detail -->
+
+    <!-- start: Modal -->
+    <div class="modal" id="apply-now">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-title">Apply Now</div>
+                    <button type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-apply-now">
+                        <div>
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="cover-letter" class="form-label">Cover Letter</label>
+                            <select name="cover-letter" id="cover-letter" class="form-control">
+                                <option value="">Select Cover Letter</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cv" class="form-label">CV</label>
+                            <select name="cv" id="cv" class="form-control">
+                                <option value="">Select CV</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-blue">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: Modal -->
 
     <!-- start: Footer -->
     <footer>
