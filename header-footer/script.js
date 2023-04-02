@@ -1,3 +1,4 @@
+// start: Navbar
 $('[data-toggle="navbar-submenu"]').click(function(e) {
     if(window.innerWidth <= 767) {
         e.preventDefault()
@@ -23,7 +24,9 @@ $('.navbar-toggle').click(function(e) {
         }, 250)
     }
 })
+// end: Navbar
 
+// start: Slider
 $('[data-arrow="prev"]').click(function(e) {
     e.preventDefault()
     var width = $($(this).attr('data-slider')).children().eq(0).width()
@@ -35,6 +38,7 @@ $('[data-arrow="next"]').click(function(e) {
     var width = $($(this).attr('data-slider')).children().eq(0).width()
     $($(this).attr('data-slider')).scrollLeft($($(this).attr('data-slider')).scrollLeft() + width)
 })
+// end: Slider
 
 // start: Form
 $('.form-upload-image > input').change(function(e) {
@@ -44,3 +48,17 @@ $('.form-upload-image > input').change(function(e) {
     }
 })
 // end: Form
+
+// start: Modal
+$('[data-toggle="modal"]').click(function(e) {
+    e.preventDefault()
+    $('html').addClass('overflow-hidden')
+    $($(this).attr('data-target')).addClass('shown')
+})
+
+$('[data-dismiss="modal"]').click(function(e) {
+    e.preventDefault()
+    $('html').removeClass('overflow-hidden')
+    $(this).closest('.modal').removeClass('shown')
+})
+// end: Modal

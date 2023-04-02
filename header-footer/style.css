@@ -103,9 +103,11 @@ section {
     background-color: var(--blue-600);
     color: var(--white);
 }
+
 .overflow-hidden {
     overflow: hidden;
 }
+
 .alert {
     border: 1px solid var(--gray-400);
     border-radius: 6px;
@@ -138,6 +140,7 @@ section {
     font-size: 14px;
     color: var(--gray-600);
 }
+
 .form-control {
     padding: 10px 16px;
     border-radius: 6px;
@@ -241,6 +244,50 @@ label.form-label {
     background-color: var(--white);
     pointer-events: none;
     z-index: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, .5);
+    overflow-y: auto;
+    display: none;
+}
+.modal.shown {
+    display: block;
+}
+.modal-dialog {
+    min-height: calc(100% - 32px);
+    margin: 16px auto;
+    max-width: 540px;
+    padding: 0 16px;
+}
+.modal-content {
+    background-color: var(--white);
+    border-radius: 8px;
+}
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--gray-400);
+}
+.modal-header-title {
+    font-weight: 800;
+}
+.modal [data-dismiss="modal"] {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal-body {
+    padding: 16px;
 }
 /* end: Global */
 

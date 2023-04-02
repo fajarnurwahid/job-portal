@@ -94,23 +94,9 @@
                                         <div class="panel-listing-item-status">Full Time</div>
                                         <div class="panel-listing-item-salary">$1200 - $2500</div>
                                     </div>
-                                </article>
-                                <article class="panel-listing-item">
-                                    <div class="panel-listing-item-top">
-                                        <img src="https://plus.unsplash.com/premium_photo-1674506654040-65deca8593d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                                        <div>
-                                            <a href="#" class="panel-listing-item-title">Digital Marketing Executive</a>
-                                            <div class="panel-listing-item-location">
-                                                <i class="ri-map-pin-line"></i>
-                                                Sacramento, California
-                                            </div>
-                                            <p class="panel-listing-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laborum suscipit totam quia a quaerat excepturi accusamus et eaque sunt.</p>
-                                        </div>
-                                        <a href="#" class="panel-listing-item-favourite"><i class="ri-heart-3-line"></i></a>
-                                    </div>
-                                    <div class="panel-listing-item-bottom">
-                                        <div class="panel-listing-item-status">Full Time</div>
-                                        <div class="panel-listing-item-salary">$1200 - $2500</div>
+                                    <div class="panel-listing-item-action">
+                                        <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#apply-now">Apply Now</button>
+                                        <button type="button" class="btn btn-white">View</button>
                                     </div>
                                 </article>
                                 <article class="panel-listing-item">
@@ -129,6 +115,54 @@
                                     <div class="panel-listing-item-bottom">
                                         <div class="panel-listing-item-status">Full Time</div>
                                         <div class="panel-listing-item-salary">$1200 - $2500</div>
+                                    </div>
+                                    <div class="panel-listing-item-action">
+                                        <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#apply-now">Apply Now</button>
+                                        <button type="button" class="btn btn-white">View</button>
+                                    </div>
+                                </article>
+                                <article class="panel-listing-item">
+                                    <div class="panel-listing-item-top">
+                                        <img src="https://plus.unsplash.com/premium_photo-1674506654040-65deca8593d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                                        <div>
+                                            <a href="#" class="panel-listing-item-title">Digital Marketing Executive</a>
+                                            <div class="panel-listing-item-location">
+                                                <i class="ri-map-pin-line"></i>
+                                                Sacramento, California
+                                            </div>
+                                            <p class="panel-listing-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laborum suscipit totam quia a quaerat excepturi accusamus et eaque sunt.</p>
+                                        </div>
+                                        <a href="#" class="panel-listing-item-favourite"><i class="ri-heart-3-line"></i></a>
+                                    </div>
+                                    <div class="panel-listing-item-bottom">
+                                        <div class="panel-listing-item-status">Full Time</div>
+                                        <div class="panel-listing-item-salary">$1200 - $2500</div>
+                                    </div>
+                                    <div class="panel-listing-item-action">
+                                        <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#apply-now">Apply Now</button>
+                                        <button type="button" class="btn btn-white">View</button>
+                                    </div>
+                                </article>
+                                <article class="panel-listing-item">
+                                    <div class="panel-listing-item-top">
+                                        <img src="https://plus.unsplash.com/premium_photo-1674506654040-65deca8593d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                                        <div>
+                                            <a href="#" class="panel-listing-item-title">Digital Marketing Executive</a>
+                                            <div class="panel-listing-item-location">
+                                                <i class="ri-map-pin-line"></i>
+                                                Sacramento, California
+                                            </div>
+                                            <p class="panel-listing-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laborum suscipit totam quia a quaerat excepturi accusamus et eaque sunt.</p>
+                                        </div>
+                                        <a href="#" class="panel-listing-item-favourite"><i class="ri-heart-3-line"></i></a>
+                                    </div>
+                                    <div class="panel-listing-item-bottom">
+                                        <div class="panel-listing-item-status">Full Time</div>
+                                        <div class="panel-listing-item-salary">$1200 - $2500</div>
+                                    </div>
+                                    <div class="panel-listing-item-action">
+                                        <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#apply-now">Apply Now</button>
+                                        <button type="button" class="btn btn-white">View</button>
                                     </div>
                                 </article>
                             </div>
@@ -139,6 +173,46 @@
         </div>
     </section>
     <!-- end: Listing -->
+
+    <!-- start: Modal -->
+    <div class="modal" id="apply-now">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-title">Apply Now</div>
+                    <button type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-apply-now">
+                        <div>
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="cover-letter" class="form-label">Cover Letter</label>
+                            <select name="cover-letter" id="cover-letter" class="form-control">
+                                <option value="">Select Cover Letter</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cv" class="form-label">CV</label>
+                            <select name="cv" id="cv" class="form-control">
+                                <option value="">Select CV</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-blue">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: Modal -->
 
     <!-- start: Footer -->
     <footer>

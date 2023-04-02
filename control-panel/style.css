@@ -280,6 +280,21 @@
 .panel-listing-item-salary {
     font-size: 20px;
 }
+.panel-listing-item-action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+.panel-listing-item-action > * {
+    margin-right: 8px;
+}
+.form-apply-now > :not(:last-child) {
+    margin-bottom: 16px;
+}
+.form-apply-now > button {
+    width: 100%;
+}
 /* end: Listing */
 
 
