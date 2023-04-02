@@ -1,0 +1,139 @@
+/* start: Globals */
+body {
+    background-color: var(--gray-200);
+}
+/* end: Globals */
+
+
+
+/* start: Course */
+.course-wrapper {
+    display: flex;
+    align-items: center;
+}
+.course-wrapper > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 24px;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+.course-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.course-author {
+    color: var(--gray-600);
+    margin-bottom: 12px;
+}
+.course-short-description {
+    margin-bottom: 16px;
+}
+.course-rating {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.course-rating i {
+    font-size: 18px;
+    margin-right: 4px;
+    color: var(--orange-600);
+}
+.course-rating span {
+    margin-left: 4px;
+    font-size: 14px;
+    color: var(--gray-600);
+    font-weight: 400;
+}
+/* end: Course */
+
+
+
+/* start: Detail */
+.detail-section {
+    padding: 32px 0;
+}
+.detail-about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 32px;
+    align-items: flex-start;
+}
+.detail-about-wrapper > * {
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px -4px rgba(0, 0, 0, .1);
+}
+.detail-about-box {
+    margin-bottom: 32px;
+}
+.detail-about-box-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.detail-about-box p {
+    line-height: 1.5;
+}
+.detail-info-list {
+    list-style-type: none;
+}
+.detail-info-list > li {
+    display: flex;
+}
+.detail-info-list > li:not(:last-child) {
+    margin-bottom: 16px;
+}
+.detail-info-list-icon {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-200);
+    font-size: 18px;
+    border-radius: 50%;
+}
+.detail-info-list-title {
+    font-weight: 700;
+}
+.detail-info-list-subtitle {
+    font-size: 14px;
+    color: var(--gray-600);
+}
+/* end: Detail */
+
+
+
+
+
+
+
+/* start: Breakpoints */
+@media screen and (max-width: 991px) {
+    .detail-about-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .detail-about-wrapper > :first-child {
+        order: 2;
+    }
+    .detail-about-wrapper > :last-child {
+        order: 1;
+    }
+}
+@media screen and (max-width: 767px) {
+    .course-wrapper {
+        display: block;
+    }
+    .course-wrapper > img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
+/* end: Breakpoints */
